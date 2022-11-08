@@ -1,0 +1,1 @@
+#Ex 1073 - Beecrowd - Quadrado de pares
