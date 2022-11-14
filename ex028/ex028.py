@@ -1,4 +1,4 @@
-#Exercicio 1168 - Beecrowd - 
+#Exercicio 1168 - Beecrowd - intervalos de primos!
 
 inicio = int(input())
 fim = int(input())
