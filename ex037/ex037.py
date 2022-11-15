@@ -1,5 +1,6 @@
 # Ex 1165 - Beecrowd - Número primo
 
+#Código não está funcionando na plataforma :(
 def eh_primo(n):
     y = 2
     while y < n//2 + 1:
@@ -11,7 +12,7 @@ def eh_primo(n):
 
 qtd_testes = int(input())
 
-cont = 0
+cont = 1
 
 while cont < qtd_testes: 
     x = int(input())
