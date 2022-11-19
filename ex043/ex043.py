@@ -13,6 +13,7 @@ def obter_dados_canal(lista):
     # Adicionando canal na lista de canais
     canais.append([nome, inscritos, monetizacao, ehpremium])
 
+
 def calcular_bonificacao(valor_premium, valor_nao_premium):
   lista_de_bonificacao = []
 
@@ -31,6 +32,7 @@ def calcular_bonificacao(valor_premium, valor_nao_premium):
 
   return lista_de_bonificacao
 
+
 def exibir_bonificacao(bonus):
   print('-----')
   print('BÔNUS')
@@ -41,6 +43,7 @@ def exibir_bonificacao(bonus):
     nome = bonificacao[0]
     valor = bonificacao[1]
     print(f'{nome}: R$ {valor:.2f}')
+
 
 canais = []
 

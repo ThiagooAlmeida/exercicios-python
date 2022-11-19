@@ -25,7 +25,6 @@ def remover(lista, item):
 # Função para exibir os itens da lista de forma ordenada
 def exibir(lista):
   lista.sort()
-  
   for i in range(len(lista)):
     if (i < len(lista) - 1):
       print(lista[i], end=' ')

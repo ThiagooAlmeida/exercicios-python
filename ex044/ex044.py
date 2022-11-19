@@ -3,20 +3,26 @@
 tempos = []
 tempo = int(input())
 
+#funções
 def calcula_media():
   media = sum(tempos) / len(tempos)
   return media
 
+
 def exibe_media(media):
   print(f'MEDIA: {media:.2f}')
+
 
 def exibe_tempos_abaixo_da_media(media):
   if(tempo < media):
     print(tempo)
 
+
 def adiciona_tempo_na_lista():
   tempos.append(tempo)
 
+
+#programa principal
 while (tempo >= 0):
   adiciona_tempo_na_lista()
   tempo = int(input())
