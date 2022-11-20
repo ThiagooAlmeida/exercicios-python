@@ -1,14 +1,17 @@
 #Ex 1284 - Beecrowd - segunda Chance
 
+#Entrada
 N = int(input())
 
+#funções
 def obter_notas():
   notas = []
 
-  for _ in range(N):
+  for _ in range(N):# "_(underline)" indica que o contador do loop não será usado
     notas.append(float(input()))
 
   return notas
+
 
 def obter_notas_finais(notas_originais, novas_notas):
   quantidade_notas_alteradas = 0
@@ -22,11 +25,13 @@ def obter_notas_finais(notas_originais, novas_notas):
 
   return quantidade_notas_alteradas
 
+
 def exibir_notas_alteradas(notas_originais, notas_finais, quantidade_notas_alteradas):
   print(f'NOTAS ALTERADAS: {quantidade_notas_alteradas}')
   for i in range(N):
     nota_alterada = ('*' if notas_originais[i] != notas_finais[i] else '-')
     print(f'{nota_alterada}({i+1:03}) original: {notas_originais[i]:05.2f} | final: {notas_finais[i]:05.2f}')
+
 
 if (1 <= N <= 999):
   notas_originais = obter_notas()
