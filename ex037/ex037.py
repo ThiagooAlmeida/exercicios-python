@@ -1,30 +1,30 @@
 # Ex 1165 - Beecrowd - Número primo
 
-#Código não está funcionando na plataforma :(
+
 def eh_primo(n):
-    y = 2
-    while y < n//2 + 1:
+    y = 2 #começando do n2 pq o 1 é smp divisor
+    while y < n//2 + 1: # Varivel y irá percorrer até a 1/2 + 1 e parar
         if n % y == 0:
             return False
-        y += 1 
+        y += 1
     return True
-
+    
 
 qtd_testes = int(input())
 
-cont = 1
-
-while cont < qtd_testes: 
+cont_primos = 0 
+for _ in range(qtd_testes):
     x = int(input())
     if eh_primo(x):
-        print (f'{x} eh primo')
-     
+        print(f'{x} eh primo')
+        cont_primos += 1
     else:
-        print (f'{x} nao eh primo')
-        cont += 1 
+        print(f'{x} nao eh primo')
 
 
-#2o código que não funciona no beecrowd
+
+
+# código que não funciona no beecrowd
 
 qtd_testes = int(input())
 
