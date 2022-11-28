@@ -1,3 +1,5 @@
+#Ex 1172 - Beecrowd - substituição de vetor I
+
 x = [1,2,3,4,5,6,7,8,9,10] #vetor/lista
 
 for i in range(len(x)):# i = posição, i percorrerá todo indice da lista, no caso 10 indices
